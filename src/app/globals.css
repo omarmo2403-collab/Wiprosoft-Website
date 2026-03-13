@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Brand colors ── */
+  --color-primary: #03A3B2;
+  --color-primary-light: #04BFD0;
+  --color-primary-dark: #028A97;
+  --color-secondary: #172F56;
+  --color-secondary-light: #1E3D6F;
+
+  /* Accent = primary (single source of truth) */
+  --color-accent: #03A3B2;
+  --color-accent-light: #04BFD0;
+  --color-accent-dark: #028A97;
+
+  /* ── Light surfaces ── */
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F7F9FA;
+  --color-surface-card: #FFFFFF;
+
+  /* ── Borders (minimal, near-invisible) ── */
+  --color-border: #E8ECF0;
+  --color-border-light: #F1F4F7;
+
+  /* ── Text hierarchy ── */
+  --color-text-heading: #172F56;
+  --color-text-body: #475569;
+  --color-text-muted: #94A3B8;
+
+  /* ── Footer (secondary tone, not pitch-black) ── */
+  --color-footer-bg: #172F56;
+  --color-footer-text: #CBD5E1;
+  --color-footer-heading: #FFFFFF;
+  --color-footer-muted: #94A3B8;
+  --color-footer-border: rgba(255, 255, 255, 0.1);
+
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-text-body);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(3, 163, 178, 0.15);
+  color: var(--color-secondary);
+}
+
+/* ── Hero flowing gradient ── */
+@keyframes hero-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  33% {
+    background-position: 100% 25%;
+  }
+  66% {
+    background-position: 50% 100%;
+  }
+}
+
+.animate-hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #04BFD0,
+    #03A3B2,
+    #1E3D6F,
+    #172F56,
+    #028A97,
+    #03A3B2
+  );
+  background-size: 300% 300%;
+  animation: hero-flow 18s ease infinite;
+}
+
+/* Brand gradient utility */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #03A3B2 0%, #172F56 100%);
+}
+
+/* ── Marquee ── */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* ── Prose (blog content) ── */
+.prose {
+  --tw-prose-body: var(--color-text-body);
+  --tw-prose-headings: var(--color-secondary);
+  --tw-prose-links: var(--color-primary);
+  --tw-prose-bold: var(--color-secondary);
+  --tw-prose-counters: var(--color-text-muted);
+  --tw-prose-bullets: var(--color-text-muted);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-text-body);
+  --tw-prose-quote-borders: var(--color-primary);
+  --tw-prose-code: var(--color-secondary);
+  --tw-prose-pre-code: #E2E8F0;
+  --tw-prose-pre-bg: var(--color-secondary);
 }
