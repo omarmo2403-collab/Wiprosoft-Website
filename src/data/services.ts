@@ -48,7 +48,7 @@ export const services: Service[] = [
     id: "branding-design",
     title: "Branding & Design",
     description: "Creative branding solutions that establish a strong visual identity and make your business stand out.",
-    color: "#6366F1",
+    color: "#03A3B2",
     icon: Palette,
     subServices: [
       { name: "Brand Identity", description: "Logo design, color palettes, and brand guidelines" },

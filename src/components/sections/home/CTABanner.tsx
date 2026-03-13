@@ -18,7 +18,7 @@ export function CTABanner() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
-              <Button href="/contact" className="bg-white text-secondary hover:bg-white/90 shadow-lg">
+              <Button href="/contact" className="bg-white !text-slate-900 hover:bg-white/90 shadow-lg">
                 Start a Project
               </Button>
               <Button href="/portfolio" className="border border-white/30 text-white hover:bg-white/10">

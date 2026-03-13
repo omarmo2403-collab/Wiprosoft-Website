@@ -50,7 +50,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          <Button href="/contact" className="bg-white text-secondary hover:bg-white/90 shadow-lg shadow-black/10">
+          <Button href="/contact" className="bg-white !text-slate-900 hover:bg-white/90 shadow-lg shadow-black/10">
             Start a Project
           </Button>
           <Button href="/portfolio" className="border-white/30 text-white hover:bg-white/10 border">

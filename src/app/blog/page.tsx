@@ -19,16 +19,18 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="pt-32 pb-12">
         <SectionWrapper>
-          <span className="mb-3 inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
-            Our Blog
-          </span>
-          <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-5xl lg:text-6xl">
-            Blog
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted">
-            Insights, tips, and stories from our team on web development,
-            digital marketing, and branding.
-          </p>
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="text-accent text-sm font-medium tracking-wider uppercase">
+              Our Blog
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary mt-4">
+              Blog
+            </h1>
+            <p className="text-text-muted text-lg mt-6 max-w-2xl mx-auto">
+              Insights, tips, and stories from our team on web development,
+              digital marketing, and branding.
+            </p>
+          </div>
         </SectionWrapper>
       </section>
 

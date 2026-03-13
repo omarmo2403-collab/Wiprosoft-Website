@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:wiprosoft.co.uk)",
+      "WebFetch(domain:designproject.io)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes 2>&1)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && npx create-next-app@latest wiprosoft-temp --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes 2>&1)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && cp -r wiprosoft-temp/* . && cp -r wiprosoft-temp/.* . 2>/dev/null; rm -rf wiprosoft-temp)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && cp -r wiprosoft-temp/package.json wiprosoft-temp/package-lock.json wiprosoft-temp/postcss.config.mjs wiprosoft-temp/tsconfig.json wiprosoft-temp/README.md . && cp -r wiprosoft-temp/public . && cp -r wiprosoft-temp/src . && cp -r wiprosoft-temp/.git . 2>/dev/null; cp -r wiprosoft-temp/.gitignore . 2>/dev/null; rm -rf wiprosoft-temp)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && npm install framer-motion lucide-react clsx 2>&1 && npm install -D @tailwindcss/typography 2>&1)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && mkdir -p src/components/ui src/components/layout src/components/sections/home src/components/sections/about src/components/sections/services src/components/sections/portfolio src/components/sections/contact public/images/portfolio public/images/blog public/images/team)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && npm install @tailwindcss/typography@next 2>&1)",
+      "Bash(cd \"C:/Users/omar_/Desktop/Wiprosoft Website\" && npm run build 2>&1 | tail -60)"
+    ]
+  }
+}
