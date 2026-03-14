@@ -5,12 +5,17 @@ import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated flowing gradient background */}
-      <div className="absolute inset-0 animate-hero-gradient" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950">
+      {/* Mesh blob background */}
+      <div className="absolute inset-0">
+        <div className="absolute -top-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full mix-blend-screen filter blur-3xl opacity-60 animate-blob" />
+        <div className="absolute top-1/3 right-0 w-80 h-80 bg-gradient-to-l from-purple-500 to-pink-500 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-2" />
+        <div className="absolute -bottom-1/4 left-1/3 w-96 h-96 bg-gradient-to-t from-orange-400 to-red-500 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-4" />
+        <div className="absolute top-1/4 left-1/2 w-72 h-72 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-full mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-3" />
+      </div>
 
-      {/* Subtle overlay for depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.1),transparent_60%)]" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
