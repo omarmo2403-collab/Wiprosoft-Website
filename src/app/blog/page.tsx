@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -16,23 +17,11 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-12">
-        <SectionWrapper>
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="text-accent text-sm font-medium tracking-wider uppercase">
-              Our Blog
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary mt-4">
-              Blog
-            </h1>
-            <p className="text-text-muted text-lg mt-6 max-w-2xl mx-auto">
-              Insights, tips, and stories from our team on web development,
-              digital marketing, and branding.
-            </p>
-          </div>
-        </SectionWrapper>
-      </section>
+      <PageHeader
+        label="Our Blog"
+        title="Blog"
+        description="Insights, tips, and stories from our team on web development, digital marketing, and branding."
+      />
 
       {/* Blog Posts Grid */}
       <section className="pb-16">

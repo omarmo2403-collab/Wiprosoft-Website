@@ -91,6 +91,10 @@ body {
   animation: blob 7s infinite;
 }
 
+.animation-delay-1 {
+  animation-delay: -1s;
+}
+
 .animation-delay-2 {
   animation-delay: -2s;
 }

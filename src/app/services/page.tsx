@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
@@ -42,23 +43,11 @@ const processSteps = [
 export default function ServicesPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-12">
-        <SectionWrapper>
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="text-accent text-sm font-medium tracking-wider uppercase">
-              Our Services
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary mt-4">
-              Solutions That Drive Growth
-            </h1>
-            <p className="text-text-muted text-lg mt-6 max-w-2xl mx-auto">
-              From strategy to execution, we offer end-to-end digital services
-              designed to elevate your brand and accelerate your business.
-            </p>
-          </div>
-        </SectionWrapper>
-      </section>
+      <PageHeader
+        label="Our Services"
+        title="Solutions That Drive Growth"
+        description="From strategy to execution, we offer end-to-end digital services designed to elevate your brand and accelerate your business."
+      />
 
       {/* Services Blocks */}
       <section>

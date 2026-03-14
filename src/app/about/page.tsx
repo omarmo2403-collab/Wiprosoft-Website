@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lightbulb, Shield, Users, Target } from "lucide-react";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -48,23 +49,11 @@ const team = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-12">
-        <SectionWrapper>
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="text-accent text-sm font-medium tracking-wider uppercase">
-              About Us
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary mt-4">
-              We&apos;re a Team of Digital Innovators
-            </h1>
-            <p className="text-text-muted text-lg mt-6 max-w-2xl mx-auto">
-              We combine creativity, technology, and strategy to help businesses
-              thrive in the digital landscape.
-            </p>
-          </div>
-        </SectionWrapper>
-      </section>
+      <PageHeader
+        label="About Us"
+        title="We're a Team of Digital Innovators"
+        description="We combine creativity, technology, and strategy to help businesses thrive in the digital landscape."
+      />
 
       {/* Our Story */}
       <div className="bg-surface-alt">
