@@ -76,35 +76,32 @@ body {
   0%, 100% {
     transform: translate(0, 0) scale(1);
   }
-  25% {
-    transform: translate(20px, -50px) scale(1.1);
+  33% {
+    transform: translate(8px, -6px) scale(1.02);
   }
-  50% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
-  75% {
-    transform: translate(50px, 50px) scale(1.05);
+  66% {
+    transform: translate(-5px, 4px) scale(0.98);
   }
 }
 
 .animate-blob {
-  animation: blob 7s infinite;
+  animation: blob 300s infinite ease-in-out;
 }
 
 .animation-delay-1 {
-  animation-delay: -1s;
+  animation-delay: -60s;
 }
 
 .animation-delay-2 {
-  animation-delay: -2s;
+  animation-delay: -120s;
 }
 
 .animation-delay-3 {
-  animation-delay: -4s;
+  animation-delay: -180s;
 }
 
 .animation-delay-4 {
-  animation-delay: -6s;
+  animation-delay: -240s;
 }
 
 /* Brand gradient utility */

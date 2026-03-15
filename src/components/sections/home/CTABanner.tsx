@@ -20,53 +20,53 @@ export function CTABanner() {
           {/* Animated blobs with explicit positioning */}
           <motion.div
             animate={{
-              x: ["-40%", "40%", "-30%", "35%", "-40%"],
-              y: ["-40%", "40%", "-30%", "35%", "-40%"],
-              scale: [1, 1.5, 0.8, 1.25, 1],
+              x: ["-20%", "20%", "-15%", "15%", "-20%"],
+              y: ["-20%", "20%", "-15%", "15%", "-20%"],
+              scale: [1, 1.2, 0.9, 1.1, 1],
             }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-0 left-1/4 w-96 h-96 rounded-full"
             style={{
-              background: "radial-gradient(circle, rgba(16, 185, 129, 1) 0%, transparent 75%)",
+              background: "radial-gradient(circle, rgba(16, 185, 129, 0.8) 0%, transparent 75%)",
               filter: "blur(50px)",
             }}
           />
           <motion.div
             animate={{
-              x: ["40%", "-40%", "30%", "-35%", "40%"],
-              y: ["40%", "-40%", "30%", "-35%", "40%"],
-              scale: [1, 0.8, 1.45, 0.85, 1],
+              x: ["20%", "-20%", "15%", "-15%", "20%"],
+              y: ["20%", "-20%", "15%", "-15%", "20%"],
+              scale: [1, 0.9, 1.2, 0.9, 1],
             }}
-            transition={{ duration: 2.3, repeat: Infinity, ease: "easeInOut", delay: 0.25 }}
+            transition={{ duration: 35, repeat: Infinity, ease: "easeInOut", delay: 2 }}
             className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full"
             style={{
-              background: "radial-gradient(circle, rgba(139, 92, 246, 1) 0%, transparent 75%)",
+              background: "radial-gradient(circle, rgba(139, 92, 246, 0.8) 0%, transparent 75%)",
               filter: "blur(50px)",
             }}
           />
           <motion.div
             animate={{
-              x: ["-35%", "50%", "-40%", "45%", "-35%"],
-              y: ["50%", "-35%", "45%", "-40%", "50%"],
-              scale: [1, 1.3, 0.8, 1.3, 1],
+              x: ["-15%", "25%", "-20%", "20%", "-15%"],
+              y: ["25%", "-15%", "20%", "-20%", "25%"],
+              scale: [1, 1.15, 0.95, 1.15, 1],
             }}
-            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            transition={{ duration: 40, repeat: Infinity, ease: "easeInOut", delay: 4 }}
             className="absolute top-1/3 right-0 w-96 h-96 rounded-full"
             style={{
-              background: "radial-gradient(circle, rgba(236, 72, 153, 0.95) 0%, transparent 75%)",
+              background: "radial-gradient(circle, rgba(236, 72, 153, 0.7) 0%, transparent 75%)",
               filter: "blur(50px)",
             }}
           />
           <motion.div
             animate={{
-              x: ["50%", "-35%", "45%", "-40%", "50%"],
-              y: ["-35%", "50%", "-40%", "45%", "-35%"],
-              scale: [1, 1.25, 0.85, 1.35, 1],
+              x: ["25%", "-15%", "20%", "-20%", "25%"],
+              y: ["-15%", "25%", "-20%", "20%", "-15%"],
+              scale: [1, 1.1, 0.9, 1.2, 1],
             }}
-            transition={{ duration: 2.7, repeat: Infinity, ease: "easeInOut", delay: 0.75 }}
+            transition={{ duration: 45, repeat: Infinity, ease: "easeInOut", delay: 6 }}
             className="absolute bottom-1/4 left-1/3 w-80 h-80 rounded-full"
             style={{
-              background: "radial-gradient(circle, rgba(59, 130, 246, 0.9) 0%, transparent 75%)",
+              background: "radial-gradient(circle, rgba(59, 130, 246, 0.7) 0%, transparent 75%)",
               filter: "blur(50px)",
             }}
           />
