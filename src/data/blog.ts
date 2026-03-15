@@ -137,7 +137,7 @@ The businesses that measure effectively and adjust their strategies based on dat
     author: "Wiprosoft Team",
     category: "Digital Marketing",
     readTime: "6 min read",
-    image: "/images/blog/blog-1.jpg",
+    image: "/images/blog/blog-3.png",
     color: "#F59E0B",
   },
   {
@@ -205,7 +205,7 @@ At Wiprosoft, we're platform-agnostic. We recommend the solution that best fits 
     author: "Wiprosoft Team",
     category: "Web Development",
     readTime: "6 min read",
-    image: "/images/blog/blog-2.jpg",
+    image: "/images/blog/blog-4.png",
     color: "#6366F1",
   },
   {
@@ -256,7 +256,7 @@ Start with the basics — speed and mobile experience — and work from there. S
     author: "Wiprosoft Team",
     category: "Web Design",
     readTime: "5 min read",
-    image: "/images/blog/blog-1.jpg",
+    image: "/images/blog/blog-5.png",
     color: "#EF4444",
   },
 ];

@@ -71,38 +71,6 @@ body {
   color: var(--color-secondary);
 }
 
-/* ── Hero mesh blob gradient ── */
-@keyframes blob {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(8px, -6px) scale(1.02);
-  }
-  66% {
-    transform: translate(-5px, 4px) scale(0.98);
-  }
-}
-
-.animate-blob {
-  animation: blob 300s infinite ease-in-out;
-}
-
-.animation-delay-1 {
-  animation-delay: -60s;
-}
-
-.animation-delay-2 {
-  animation-delay: -120s;
-}
-
-.animation-delay-3 {
-  animation-delay: -180s;
-}
-
-.animation-delay-4 {
-  animation-delay: -240s;
-}
 
 /* Brand gradient utility */
 .bg-brand-gradient {
@@ -114,6 +82,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

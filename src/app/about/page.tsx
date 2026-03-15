@@ -80,7 +80,7 @@ export default function AboutPage() {
               </p>
             </div>
             <img
-              src="/images/about/cover-image.png"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
               alt="Wiprosoft team and office"
               className="aspect-square w-full rounded-2xl object-cover"
             />

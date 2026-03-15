@@ -12,6 +12,7 @@ export interface Service {
   description: string;
   color: string;
   icon: LucideIcon;
+  image?: string;
   subServices: SubService[];
 }
 
@@ -22,6 +23,7 @@ export const services: Service[] = [
     description: "Custom websites and web applications built with cutting-edge technologies for optimal performance and user experience.",
     color: "#03A3B2",
     icon: Code,
+    image: "/images/services/service-web-dev.png",
     subServices: [
       { name: "Custom Website Design", description: "Bespoke designs tailored to your brand identity" },
       { name: "E-Commerce Solutions", description: "Scalable online stores with secure payment integration" },
@@ -36,6 +38,7 @@ export const services: Service[] = [
     description: "Data-driven marketing strategies that increase visibility, drive traffic, and convert visitors into customers.",
     color: "#172F56",
     icon: BarChart3,
+    image: "/images/services/service-marketing.png",
     subServices: [
       { name: "Search Engine Optimisation", description: "On-page and off-page SEO to improve rankings" },
       { name: "Pay-Per-Click Advertising", description: "Google Ads and social media advertising campaigns" },
@@ -50,6 +53,7 @@ export const services: Service[] = [
     description: "Creative branding solutions that establish a strong visual identity and make your business stand out.",
     color: "#03A3B2",
     icon: Palette,
+    image: "/images/services/service-branding.png",
     subServices: [
       { name: "Brand Identity", description: "Logo design, color palettes, and brand guidelines" },
       { name: "UI/UX Design", description: "User-centered design for digital products" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -81,12 +82,21 @@ export default function ServicesPage() {
                   </div>
                   <div
                     className={cn(
-                      "flex aspect-video items-center justify-center rounded-2xl",
+                      "relative flex aspect-video items-center justify-center rounded-2xl overflow-hidden",
                       isEven && "lg:order-1"
                     )}
                     style={{ backgroundColor: service.color }}
                   >
-                    <Icon className="h-20 w-20 text-white/80" />
+                    {service.image ? (
+                      <Image 
+                        src={service.image} 
+                        alt={service.title} 
+                        fill 
+                        className="object-cover"
+                      />
+                    ) : (
+                      <Icon className="h-20 w-20 text-white/80" />
+                    )}
                   </div>
                 </div>
                 {index < services.length - 1 && (

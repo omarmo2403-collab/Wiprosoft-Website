@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
   description: "UK-based IT & Web Marketing Agency specializing in web development, digital marketing, and branding solutions that drive business growth.",
   metadataBase: new URL("https://wiprosoft.co.uk"),
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_GB",
