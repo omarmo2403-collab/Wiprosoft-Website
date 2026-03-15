@@ -35,7 +35,7 @@ export function Navbar() {
             : "bg-white"
         )}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex shrink-0 items-center">
             <Image
               src="/images/logo.png"
@@ -43,8 +43,8 @@ export function Navbar() {
               width={300}
               height={100}
               priority
-              className="h-16 w-auto sm:h-28"
-              style={{ maxWidth: '320px' }}
+              className="h-12 w-auto sm:h-24"
+              style={{ maxWidth: '280px' }}
             />
           </Link>
 
