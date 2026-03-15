@@ -6,7 +6,7 @@ import { MeshGradient } from "@/components/ui/MeshGradient";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
       <MeshGradient />
 
       {/* Content */}
@@ -16,13 +16,13 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-white border border-white/30 bg-white/10 backdrop-blur-sm mb-6">
+          <span className="inline-block px-4 py-1 rounded-full text-xs font-medium text-white border border-white/30 bg-white/10 backdrop-blur-sm mb-4 uppercase tracking-wider">
             IT &amp; Web Marketing Agency
           </span>
         </motion.div>
 
         <motion.h1
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
@@ -31,7 +31,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10"
+          className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}

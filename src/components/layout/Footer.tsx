@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 import { Mail, Phone, MapPin } from "lucide-react";
@@ -24,9 +25,15 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <Link href="/" className="text-xl font-bold text-footer-heading">
-              {siteConfig.name}
-              <span className="text-accent-light">.</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.png"
+                alt="Wiprosoft Logo"
+                width={140}
+                height={45}
+                className="brightness-0 invert"
+                style={{ height: 'auto', width: 'auto', maxWidth: '140px' }}
+              />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-footer-muted">
               {siteConfig.description}

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/Button";
@@ -35,15 +35,16 @@ export function Navbar() {
             : "bg-white"
         )}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
           <Link href="/" className="flex shrink-0 items-center">
             <Image
               src="/images/logo.png"
               alt="Wiprosoft Logo"
-              width={140}
-              height={45}
+              width={300}
+              height={100}
               priority
-              style={{ height: 'auto', width: 'auto', maxWidth: '140px' }}
+              className="h-16 w-auto sm:h-28"
+              style={{ maxWidth: '320px' }}
             />
           </Link>
 
@@ -53,7 +54,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors",
+                  "text-base font-semibold transition-colors",
                   pathname === link.href ? "text-accent" : "text-text-body hover:text-secondary"
                 )}
               >
@@ -63,18 +64,27 @@ export function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <Button href="/contact" size="sm">
+            <Button href="/contact" size="md">
               Get in Touch
             </Button>
           </div>
 
-          <button
-            onClick={() => setMobileOpen(true)}
-            className="text-secondary md:hidden"
-            aria-label="Open menu"
-          >
-            <Menu className="h-6 w-6" />
-          </button>
+          <div className="flex items-center gap-4 md:hidden">
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-white shadow-sm transition-transform active:scale-95"
+              aria-label="Call Us"
+            >
+              <Phone className="h-4 w-4" />
+            </a>
+            <button
+              onClick={() => setMobileOpen(true)}
+              className="text-secondary"
+              aria-label="Open menu"
+            >
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
         </nav>
       </header>
 

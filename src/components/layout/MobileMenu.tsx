@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { X } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/Button";
 
@@ -23,9 +24,14 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           <div className="flex h-full flex-col px-6 py-4">
             <div className="flex items-center justify-between">
-              <Link href="/" onClick={onClose} className="text-xl font-bold text-secondary">
-                {siteConfig.name}
-                <span className="text-accent">.</span>
+              <Link href="/" onClick={onClose} className="flex items-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="Wiprosoft Logo"
+                  width={140}
+                  height={45}
+                  style={{ height: 'auto', width: 'auto', maxWidth: '140px' }}
+                />
               </Link>
               <button onClick={onClose} aria-label="Close menu" className="text-secondary">
                 <X className="h-6 w-6" />

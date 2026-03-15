@@ -79,14 +79,11 @@ export default function AboutPage() {
                 client success remains at the heart of everything we do.
               </p>
             </div>
-            <div
-              className="flex aspect-square items-center justify-center rounded-2xl"
-              style={{ backgroundColor: "#03A3B2" }}
-            >
-              <span className="px-6 text-center text-xl font-semibold text-white">
-                Our Team
-              </span>
-            </div>
+            <img
+              src="/images/about/cover-image.png"
+              alt="Wiprosoft team and office"
+              className="aspect-square w-full rounded-2xl object-cover"
+            />
           </div>
         </SectionWrapper>
       </div>

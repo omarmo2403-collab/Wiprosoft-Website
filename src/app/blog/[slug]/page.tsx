@@ -97,15 +97,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </header>
 
-          {/* Featured Image Placeholder */}
-          <div
-            className="mb-10 flex aspect-video items-center justify-center rounded-2xl"
-            style={{ backgroundColor: post.color }}
-          >
-            <span className="px-6 text-center text-xl font-semibold text-white">
-              {post.title}
-            </span>
-          </div>
+          <img
+            src={post.image}
+            alt={post.title}
+            className="mb-10 aspect-video w-full rounded-2xl object-cover"
+          />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
@@ -128,14 +124,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href={`/blog/${relatedPost.slug}`}
                 >
                   <Card className="h-full overflow-hidden transition-transform hover:-translate-y-1">
-                    <div
-                      className="flex aspect-video items-center justify-center rounded-xl"
-                      style={{ backgroundColor: relatedPost.color }}
-                    >
-                      <span className="px-4 text-center text-lg font-semibold text-white">
-                        {relatedPost.title}
-                      </span>
-                    </div>
+                    <img
+                      src={relatedPost.image}
+                      alt={relatedPost.title}
+                      className="aspect-video w-full rounded-xl object-cover"
+                    />
                     <div className="mt-4 space-y-2">
                       <Badge>{relatedPost.category}</Badge>
                       <h3 className="text-lg font-semibold text-secondary">

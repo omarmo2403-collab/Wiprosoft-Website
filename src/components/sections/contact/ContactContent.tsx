@@ -201,8 +201,17 @@ export function ContactContent() {
             </li>
           </ul>
 
-          <div className="mt-8 flex aspect-video items-center justify-center rounded-xl border border-border bg-surface-alt">
-            <span className="text-text-muted">Map</span>
+          <div className="mt-8 overflow-hidden rounded-xl border border-border">
+            <iframe
+              title="Wiprosoft Office Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5819709515863!2d-0.29778692401579476!3d51.53922670837858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876123cc7c9c07f%3A0x4fce2f058c16e2ca!2sContinental%20House%2C%20497%20Sunleigh%20Rd%2C%20Wembley%20HA0%204LY%2C%20UK!5e0!3m2!1sen!2sin!4v1773584849223!5m2!1sen!2sin"
+              width="100%"
+              height="200"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </Card>
       </div>

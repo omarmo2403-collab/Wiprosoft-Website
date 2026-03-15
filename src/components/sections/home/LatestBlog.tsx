@@ -30,14 +30,11 @@ export function LatestBlog() {
             <motion.div key={post.id} variants={fadeUp}>
               <Link href={`/blog/${post.slug}`}>
                 <Card className="overflow-hidden hover:border-accent/50 transition-colors">
-                  <div
-                    className="flex aspect-video items-center justify-center rounded-xl"
-                    style={{ backgroundColor: post.color }}
-                  >
-                    <span className="px-4 text-center text-lg font-semibold text-white">
-                      {post.title}
-                    </span>
-                  </div>
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="aspect-video w-full rounded-xl object-cover"
+                  />
 
                   <div className="p-6">
                     <Badge>{post.category}</Badge>

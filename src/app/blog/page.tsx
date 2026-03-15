@@ -30,15 +30,11 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
                 <Card className="h-full overflow-hidden transition-transform hover:-translate-y-1">
-                  {/* Color Placeholder */}
-                  <div
-                    className="flex aspect-video items-center justify-center rounded-xl"
-                    style={{ backgroundColor: post.color }}
-                  >
-                    <span className="px-4 text-center text-lg font-semibold text-white">
-                      {post.title}
-                    </span>
-                  </div>
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="aspect-video w-full rounded-xl object-cover"
+                  />
 
                   {/* Content */}
                   <div className="mt-4 space-y-3">

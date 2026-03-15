@@ -41,7 +41,7 @@ At Wiprosoft, we build every project mobile-first, ensuring your business captur
     author: "Wiprosoft Team",
     category: "Web Development",
     readTime: "5 min read",
-    image: "/images/blog/mobile-first.svg",
+    image: "/images/blog/blog-1.jpg",
     color: "#03A3B2",
   },
   {
@@ -86,7 +86,7 @@ Getting local SEO right can transform your business. The investment is modest co
     author: "Wiprosoft Team",
     category: "SEO",
     readTime: "7 min read",
-    image: "/images/blog/local-seo.svg",
+    image: "/images/blog/blog-2.jpg",
     color: "#172F56",
   },
   {
@@ -137,7 +137,7 @@ The businesses that measure effectively and adjust their strategies based on dat
     author: "Wiprosoft Team",
     category: "Digital Marketing",
     readTime: "6 min read",
-    image: "/images/blog/marketing-roi.svg",
+    image: "/images/blog/blog-1.jpg",
     color: "#F59E0B",
   },
   {
@@ -205,7 +205,7 @@ At Wiprosoft, we're platform-agnostic. We recommend the solution that best fits 
     author: "Wiprosoft Team",
     category: "Web Development",
     readTime: "6 min read",
-    image: "/images/blog/nextjs-vs-wordpress.svg",
+    image: "/images/blog/blog-2.jpg",
     color: "#6366F1",
   },
   {
@@ -256,7 +256,7 @@ Start with the basics — speed and mobile experience — and work from there. S
     author: "Wiprosoft Team",
     category: "Web Design",
     readTime: "5 min read",
-    image: "/images/blog/design-mistakes.svg",
+    image: "/images/blog/blog-1.jpg",
     color: "#EF4444",
   },
 ];

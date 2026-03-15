@@ -34,15 +34,11 @@ export function FeaturedWork() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <div className="rounded-xl overflow-hidden border border-border bg-surface-card">
-                {/* Image placeholder */}
-                <div
-                  className="flex aspect-video items-center justify-center rounded-xl"
-                  style={{ backgroundColor: project.color }}
-                >
-                  <span className="px-4 text-center text-lg font-semibold text-white">
-                    {project.title}
-                  </span>
-                </div>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="aspect-video w-full rounded-xl object-cover"
+                />
 
                 {/* Content */}
                 <div className="p-6">

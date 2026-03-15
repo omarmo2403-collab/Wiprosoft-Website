@@ -57,15 +57,11 @@ export function PortfolioContent() {
                 transition={{ duration: 0.3 }}
               >
                 <Card className="overflow-hidden">
-                  {/* Text Placeholder instead of image */}
-                  <div
-                    className="flex aspect-video items-center justify-center rounded-xl"
-                    style={{ backgroundColor: project.color }}
-                  >
-                    <span className="px-4 text-center text-lg font-semibold text-white">
-                      {project.title}
-                    </span>
-                  </div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="aspect-video w-full rounded-xl object-cover"
+                  />
 
                   {/* Content */}
                   <div className="mt-4 space-y-3">

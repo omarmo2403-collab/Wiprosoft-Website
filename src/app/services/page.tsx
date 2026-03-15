@@ -86,9 +86,7 @@ export default function ServicesPage() {
                     )}
                     style={{ backgroundColor: service.color }}
                   >
-                    <span className="px-4 text-center text-lg font-semibold text-white">
-                      {service.title}
-                    </span>
+                    <Icon className="h-20 w-20 text-white/80" />
                   </div>
                 </div>
                 {index < services.length - 1 && (

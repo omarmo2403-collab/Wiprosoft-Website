@@ -19,7 +19,7 @@ export const projects: Project[] = [
     category: "web-development",
     description: "A comprehensive learning platform connecting professionals with expert-led training courses across technology and business skills.",
     tags: ["Next.js", "UI/UX", "E-Learning"],
-    image: "/images/portfolio/skill-matters.svg",
+    image: "/images/portfolio/skill-matters.jpg",
     color: "#03A3B2",
   },
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     category: "web-development",
     description: "Corporate website for a leading HR consultancy firm, featuring service showcases and client testimonial integration.",
     tags: ["WordPress", "Corporate", "HR"],
-    image: "/images/portfolio/jma-hr.svg",
+    image: "/images/portfolio/jma-hr.jpg",
     color: "#172F56",
   },
   {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     category: "branding-design",
     description: "Brand identity and portfolio website for a premium London-based interior design studio.",
     tags: ["Branding", "Portfolio", "Design"],
-    image: "/images/portfolio/interior-finish.svg",
+    image: "/images/portfolio/interior-finish.jpg",
     color: "#03A3B2",
   },
   {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     category: "digital-marketing",
     description: "Digital marketing campaign and website for an independent music label, driving streaming numbers and artist visibility.",
     tags: ["Marketing", "Music", "Social Media"],
-    image: "/images/portfolio/sprk-music.svg",
+    image: "/images/portfolio/sprk-music.jpg",
     color: "#172F56",
   },
   {
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     category: "web-development",
     description: "E-commerce platform for automotive parts retailer with advanced search, filtering, and secure checkout.",
     tags: ["E-Commerce", "Automotive", "SEO"],
-    image: "/images/portfolio/car-door-mirrors.svg",
+    image: "/images/portfolio/car-door-mirrors.png",
     color: "#03A3B2",
   },
   {
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     category: "branding-design",
     description: "Fun, bold branding and website for a gourmet burger restaurant chain expanding across South London.",
     tags: ["Branding", "Restaurant", "Web Design"],
-    image: "/images/portfolio/burgernomics.svg",
+    image: "/images/portfolio/burgernomics.jpg",
     color: "#172F56",
   },
 ];
