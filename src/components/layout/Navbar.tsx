@@ -35,7 +35,7 @@ export function Navbar() {
             : "bg-white"
         )}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-6 sm:py-4 lg:px-8">
           <Link href="/" className="flex shrink-0 items-center">
             <Image
               src="/images/logo.png"
@@ -43,7 +43,7 @@ export function Navbar() {
               width={300}
               height={100}
               priority
-              className="h-12 w-auto sm:h-24"
+              className="h-16 w-auto sm:h-24"
               style={{ maxWidth: '280px' }}
             />
           </Link>
@@ -72,17 +72,17 @@ export function Navbar() {
           <div className="flex items-center gap-4 md:hidden">
             <a
               href={`tel:${siteConfig.phone}`}
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-white shadow-sm transition-transform active:scale-95"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-accent text-white shadow-sm transition-transform active:scale-95"
               aria-label="Call Us"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-5 w-5" />
             </a>
             <button
               onClick={() => setMobileOpen(true)}
               className="text-secondary"
               aria-label="Open menu"
             >
-              <Menu className="h-6 w-6" />
+              <Menu className="h-8 w-8" />
             </button>
           </div>
         </nav>
