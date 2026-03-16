@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
-      <article className="pt-24 pb-16">
+      <article className="pt-36 pb-16">
         <SectionWrapper className="max-w-3xl">
           {/* Header */}
           <header className="mb-10">

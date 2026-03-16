@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ label, title, description }: PageHeaderProps) {
   return (
-    <section className="relative pt-24 pb-6 md:pt-40 md:pb-10 overflow-hidden bg-slate-950">
+    <section className="relative pt-36 pb-6 md:pt-40 md:pb-10 overflow-hidden bg-slate-950">
       <MeshGradient />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

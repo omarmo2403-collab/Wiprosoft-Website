@@ -6,7 +6,7 @@ import { MeshGradient } from "@/components/ui/MeshGradient";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-36">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36 md:pt-36">
       <MeshGradient />
 
       {/* Content */}
